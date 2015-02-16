@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.flash-infos > div {width: 250px;height: 150px;background-color: blue; margin:5px;color:white;display: none;}
+		div.slidify-active {display: block;}
+	</style>
+</head>
+<body>
+
+	<div class="flash-infos">
+		<div>Slide 1</div>
+		<div>Slide 2</div>
+		<div>Slide 3</div>
+		<div>Slide 4</div>
+		<div>Slide 5</div>
+	</div>
+
+	<div class="flash-infos" data-duration="1">
+		<div>Slide 1</div>
+		<div>Slide 2</div>
+		<div>Slide 3</div>
+		<div>Slide 4</div>
+		<div>Slide 5</div>
+	</div>
+
+	<div class="flash-infos">
+		<div>Slide 1</div>
+		<div>Slide 2</div>
+		<div>Slide 3</div>
+		<div>Slide 4</div>
+		<div>Slide 5</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="expertime.slidify.js"></script>
+	<script>
+		$(".flash-infos").slidify({"duration" : 5});
+	</script>
+</body>
+</html>
